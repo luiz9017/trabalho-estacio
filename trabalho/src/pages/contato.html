@@ -12,9 +12,10 @@
 <body>
       <header>
     <nav>
-      <img src="../../src/images/concessionaria t (3).png" alt=" imagem da concessioraria" style="height: 120px; width: 190px;">
+      <img class="logo" src="../../src/images/concessionaria t (3).png" alt=" imagem da concessioraria" style="height: 120px; width: 190px;">
       <ul>
     <li><a href="../../index.html">Início</a></li>
+    <li><a href="../../src/pages/sobre.html">Sobre</a></li>
     <li><a href="../../src/pages/contato.html">Contato</a></li>
     <li><a href="../../src/pages/carros.html">Carros</a></li>
       </ul>
@@ -22,9 +23,29 @@
   </header>
       <main>
     <h1>Bem-vindo à Concessionária Texmex 🚗</h1>
-    <h2>Qualidade, Confiança e Preços Acessíveis</h2>
-    <p>Na <strong>Texmex</strong>, você encontra os melhores veículos, com garantia e atendimento de excelência.</p>
-  </main>
+      </main>
+
+      <img class="imagem_principal2" src="../images/TRABALHO .png" alt="VENHA NOS CONHECER">
+
+      <button id="btn-top" aria-label="Voltar ao topo">↑</button>
+  <script>
+    // botão subir ao topo - comportamento
+    (function(){
+      const btn = document.getElementById('btn-top');
+      if(!btn) return;
+      // mostrar quando rolar 300px
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) btn.classList.add('show');
+        else btn.classList.remove('show');
+      });
+      // rolar suavemente ao topo ao clicar
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  
+  <footer>
   <div class="icons">
   <ul>
   <a href="https://www.instagram.com/concessionariasturbo?igsh=MTVzajZ6Mmt0ZmNzNA=="><button class="instagram"><i class='bx bxl-instagram'></i></button></a>
@@ -35,7 +56,7 @@
   <br>
   </ul>
   </div>
-  <footer>
+  <br>
     &copy; 2025 Concessionária Texmex - Todos os direitos reservados
   </footer>
 </body>

@@ -127,13 +127,35 @@ footer {
 .carros {
   border: 2px solid #ddd;
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px;
   margin: 20px auto;
   max-width: 600px;
   background: #fff;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+}
+.carrinhos {
+  width: 100%;
+  max-width: 450px;     
+  aspect-ratio: 3 / 2;  
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
 }
 
+.carrinhos img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;    /* corta/ajusta para preencher sem distorcer */
+  display: block;
+  border-radius: inherit;
+}
+.logo
+{
+  height: 120px; 
+  width: 190px;
+}
 .icons ul .instagram:hover{
   color: rgb(188, 10, 211);
 }
@@ -290,7 +312,12 @@ main img:hover {
   height: 2000px;
   border-radius: 10px;
 }
-
+.imagem_principal2
+{
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+}
 .full-width {
   max-width: 100%;
   width: 100%;
@@ -305,11 +332,11 @@ main img:hover {
 }
 
 footer {
-  background: #222;
+  background: #424242;
   color: #ddd;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 50px;
+  margin-top: 90px;
   font-size: 14px;
 }
 
@@ -336,8 +363,18 @@ footer {
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 
+.sobre {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
 .icons ul .instagram:hover{
-  color: rgb(188, 10, 211);
+  color: rgb(208, 6, 235);
 }
 
 .icons ul button:hover{
@@ -347,27 +384,27 @@ footer {
 
 .icons ul{
   display: flex;
-  justify-content: center;
-  padding: 3px;
+  justify-content:end;
+  padding: 5px;
 }
 
 .icons ul{
-  padding: 10px;
+  padding: 30px;
   display: flex;
-  justify-content:flex-end;
+  justify-content:center;
   align-items:baseline;
-  gap: 30px;
+  gap: 50px;
 }
 
 .icons ul button{
-  font-size: 58px;
+  font-size: 60px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: transparent;
-  color: black;
-  border: transparent;
+  color: rgb(184, 179, 179);
+  border:transparent;
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: black;
+  box-shadow: rgb(99, 99, 99);
   transition: all 0.3s;
 }
 
@@ -402,4 +439,34 @@ body {
   }
 }
 
+#btn-top{
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0291d3;
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  z-index: 9999;
+}
+#btn-top.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#btn-top:focus{ outline: 2px solid #fff; }
+#btn-top:hover{ filter: brightness(0.95); }
+#btn-top:active{ filter: brightness(0.9); }
 
