@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Icons-Land-Transporter-Car-Left-Red.ico" type="image/x-icon">
+    <title>Concessionária Texmex | Carros de Qualidade</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body>
+        <header>
+    <nav>
+    <img class="logo" src="../../src/images/concessionaria t (3).png" alt=" imagem da concessioraria" style="height: 120px; width: 190px;">
+    <ul>
+    <li><a href="../../index.html">Início</a></li>
+    <li><a href="../../src/pages/form.html">Cadastro</a></li>
+    </ul>
+    </nav>
+        </header>
+    <main>
+    <h1>Bem-vindo à Concessionária Texmex 🚗</h1>
+    </main>
+    <div class="tela_login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Usuário">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Entrar</button>
+    </div>
+          <button id="btn-top" aria-label="Voltar ao topo">↑</button>
+    <script>
+    // botão subir ao topo - comportamento
+    (function(){
+      const btn = document.getElementById('btn-top');
+      if(!btn) return;
+      // mostrar quando rolar 300px
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) btn.classList.add('show');
+        else btn.classList.remove('show');
+      });
+      // rolar suavemente ao topo ao clicar
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+    </script>
+    <footer>
+        &copy; 2025 Concessionária Texmex - Todos os direitos reservados
+    </footer>   
+</body>
+</html>
