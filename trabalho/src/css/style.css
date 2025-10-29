@@ -470,3 +470,356 @@ body {
 #btn-top:hover{ filter: brightness(0.95); }
 #btn-top:active{ filter: brightness(0.9); }
 
+/*tela de loggin*/ 
+
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+/* Estilos para a tela de login */
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+ /*tela de cadastro*/
+ .box {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 3px solid #0291d3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background: #0291d3;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0291d3;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.labelInput {
+    position:relative;
+    top: 0;
+    margin: 1px;
+    padding: 1px, 2px;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+  
+    color: #0291d3;
+}
+
+#data {
+    border:#666 ;
+    border-radius: 1px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    width: 100%;
+    padding: 15px;
+    background: #0291d3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#submit:hover {
+    background: #017bb0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2, 145, 211, 0.2);
+}
+
+/* Estilo para os radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .inputUser {
+        font-size: 14px;
+    }
+}
