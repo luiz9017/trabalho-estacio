@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="shortcut icon" href="../../src/images/Icons-Land-Transporter-Car-Left-Red.ico" type="image/x-icon">
     <title>Concessionária Texmex | Carros de Qualidade</title>
+    <script src="../../src/js/script.js" defer></script>
     <link rel="stylesheet" href="../../src/css/style.css">
 </head>
 <body>   
@@ -472,23 +473,6 @@
   <h4>Preço: R$ 64.200</h4>
 
   <button id="btn-top" aria-label="Voltar ao topo">↑</button>
-
-  <script>
-    // botão subir ao topo - comportamento
-    (function(){
-      const btn = document.getElementById('btn-top');
-      if(!btn) return;
-      // mostrar quando rolar 300px
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) btn.classList.add('show');
-        else btn.classList.remove('show');
-      });
-      // rolar suavemente ao topo ao clicar
-      btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    })();
-  </script>
   
   </div>
     <footer>

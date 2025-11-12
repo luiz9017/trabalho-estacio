@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="src/images/Icons-Land-Transporter-Car-Left-Red.ico" type="image/x-icon">
   <title>Concessionária Texmex | Carros de Qualidade</title>
+  <script src="src/js/script.js" defer></script>
   <meta name="description" content="Concessionária Texmex - Os melhores carros com qualidade, confiança e preços acessíveis. Venha conhecer nossas ofertas.">
   <link rel="stylesheet" href="../trabalho/src/css/style.css">
 </head>
@@ -30,22 +31,6 @@
 <img class="imagem_principal" src="../trabalho/src/images/concessionaria t 3page.png" alt="imagemprincipal">
 
       <button id="btn-top" aria-label="Voltar ao topo">↑</button>
-  <script>
-    // botão subir ao topo - comportamento
-    (function(){
-      const btn = document.getElementById('btn-top');
-      if(!btn) return;
-      // mostrar quando rolar 300px
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) btn.classList.add('show');
-        else btn.classList.remove('show');
-      });
-      // rolar suavemente ao topo ao clicar
-      btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    })();
-  </script>
   
 <footer>
     &copy; 2025 Concessionária Texmex - Todos os direitos reservados

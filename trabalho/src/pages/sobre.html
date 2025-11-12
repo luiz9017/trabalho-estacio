@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../images/Icons-Land-Transporter-Car-Left-Red.ico" type="image/x-icon">
   <title>Concessionária Texmex | Sobre</title>
+  <script src="../js/script.js" defer></script>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -48,22 +49,6 @@
   </main>
 
       <button id="btn-top" aria-label="Voltar ao topo">↑</button>
-  <script>
-    // botão subir ao topo - comportamento
-    (function(){
-      const btn = document.getElementById('btn-top');
-      if(!btn) return;
-      // mostrar quando rolar 300px
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) btn.classList.add('show');
-        else btn.classList.remove('show');
-      });
-      // rolar suavemente ao topo ao clicar
-      btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    })();
-  </script>
 
   <footer>
     &copy; 2025 Concessionária Texmex - Todos os direitos reservados
