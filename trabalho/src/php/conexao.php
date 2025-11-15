@@ -2,7 +2,7 @@
 
 // Informações de conexão
 $servername = "localhost:8081";
-$username = "root";
+$username = "root@localhost";
 $password = "";
 $dbname = "bank";
 
