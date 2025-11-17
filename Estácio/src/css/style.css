@@ -1,0 +1,828 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d32f2f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+main img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem principal estática */
+
+.imagem_principal {
+  width: 1200px;
+  height: 2000px;
+  border-radius: 10px;
+}
+
+.full-width {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.full-width:hover {
+  transform: none;
+}
+
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 200px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main img {
+    max-width: 100%;
+  }
+}
+
+.carros {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+}
+.carrinhos {
+  width: 100%;
+  max-width: 450px;     
+  aspect-ratio: 3 / 2;  
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
+
+.carrinhos img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;    /* corta/ajusta para preencher sem distorcer */
+  display: block;
+  border-radius: inherit;
+}
+.logo
+{
+  height: 120px; 
+  width: 190px;
+}
+.icons ul .instagram:hover{
+  color: rgb(188, 10, 211);
+}
+
+.icons ul button:hover{
+  background: none;
+  border: 1px solid (255, 255, 255);
+}
+
+.icons ul{
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+
+.icons ul{
+  padding: 10px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:baseline;
+  gap: 30px;
+}
+
+.icons ul button{
+  font-size: 58px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: transparent;
+  color: black;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: black;
+  transition: all 0.3s;
+}
+
+.icons ul .whatsapp:hover{
+  color: green;
+}
+
+.icons ul .gmail:hover{
+  color: red;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  background: linear-gradient(-45deg, #00c3ff, #6ec2f3, #ffffff, #00a2ff);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d32f2f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+main img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem principal estática */
+
+.imagem_principal {
+  width: 1200px;
+  height: 2000px;
+  border-radius: 10px;
+}
+.imagem_principal2
+{
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+}
+.full-width {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.full-width:hover {
+  transform: none;
+}
+
+footer {
+  background: #424242;
+  color: #ddd;
+  text-align: center;
+  padding: 50px;
+  margin-top: 90px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 50px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main img {
+    max-width: 100%;
+  }
+}
+
+.carros {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.sobre {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.icons ul .instagram:hover{
+  color: rgb(208, 6, 235);
+}
+
+.icons ul button:hover{
+  background: none;
+  border: 1px solid (255, 255, 255);
+}
+
+.icons ul{
+  display: flex;
+  justify-content:end;
+  padding: 5px;
+}
+
+.icons ul{
+  padding: 30px;
+  display: flex;
+  justify-content:center;
+  align-items:baseline;
+  gap: 50px;
+}
+
+.icons ul button{
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: transparent;
+  color: rgb(184, 179, 179);
+  border:transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: rgb(99, 99, 99);
+  transition: all 0.3s;
+}
+
+.icons ul .whatsapp:hover{
+  color: green;
+}
+
+.icons ul .gmail:hover{
+  color: red;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  background: linear-gradient(-45deg, #00c3ff, #6ec2f3, #ffffff, #00a2ff);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#btn-top{
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0291d3;
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  z-index: 9999;
+}
+#btn-top.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#btn-top:focus{ outline: 2px solid #fff; }
+#btn-top:hover{ filter: brightness(0.95); }
+#btn-top:active{ filter: brightness(0.9); }
+
+/*tela de loggin*/ 
+
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+/* Estilos para a tela de login */
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+ /*tela de cadastro*/
+ .box {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 3px solid #0291d3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background: #0291d3;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.inputBox {
+    position:initial;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0291d3;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 5px 0;
+   
+}
+
+.labelInput {
+    position:static;
+    top: 3px;
+    margin: 1px;
+    padding: 1px, 2px;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: 20px;
+    font-size: 18px;
+  
+    color: #0291d3;
+}
+
+#data {
+    border:#666 ;
+    border-radius: 1px;
+    outline: none;
+    font-size: 15px;
+    align-self: center;
+}
+
+#submit {
+    width: 100%;
+    padding: 15px;
+    background: #0291d3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#submit:hover {
+    background: #017bb0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2, 145, 211, 0.2);
+}
+
+/* Estilo para os radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .inputUser {
+        font-size: 14px;
+    }
+}
