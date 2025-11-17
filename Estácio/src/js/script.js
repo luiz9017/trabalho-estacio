@@ -243,5 +243,6 @@ if (codigo.length !== 3) {
 }
 //finalizar pagamento
 localStorage.removeItem("carrinho");
-window.location.href = "../pages/confirmacao.html";
+window.location.href = "../../src/pages/confirmacao.html";
 });
+
