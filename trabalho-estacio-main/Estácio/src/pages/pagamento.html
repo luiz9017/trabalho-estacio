@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../src/images/Icons-Land-Transporter-Car-Left-Red.ico" type="image/x-icon">
+    <title>Concessionária Texmex | Pagamento</title>
+    <script src="../../src/js/script.js" defer></script>
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="../../src/images/concessionaria t (3).png" alt="imagem da concessionária" style="height: 120px; width: 190px;">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../../src/pages/carros.html">Carros</a></li>
+                <li><a href="../../src/pages/carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>💳 Finalizar Pagamento</h1>
+    </main>
+
+    <div id="formCartao" class="pagamento-container">
+        <h2>Dados do Cartão</h2>
+        <form class="formulario-pagamento">
+            <div class="form-group">
+                <label for="nomeCartao">Nome no Cartão:</label>
+                <input type="text" id="nomeCartao" placeholder="Nome completo" required />
+            </div>
+
+            <div class="form-group">
+                <label for="numeroCartao">Número do Cartão:</label>
+                <input type="text" id="numeroCartao" maxlength="16" placeholder="0000 0000 0000 0000" required />
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="validade">Validade (MM/AA):</label>
+                    <input type="text" id="validade" maxlength="5" placeholder="MM/AA" required />
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" class="input-cvv" maxlength="3" placeholder="123" required />
+                </div>
+            </div>
+
+            <button type="button" class="btn-pagar" id="btnFinalizarPagamento">🔒 Finalizar Pagamento</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Concessionária Texmex - Todos os direitos reservados
+    </footer>
+</body>
+</html>

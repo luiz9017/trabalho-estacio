@@ -1,0 +1,1492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d32f2f;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main h2{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+main img{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem principal estática */
+
+.imagem_principal{
+  width: 1200px;
+  height: 2000px;
+  border-radius: 10px;
+}
+
+.full-width{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.full-width:hover{
+  transform: none;
+}
+
+footer{
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 200px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main img {
+    max-width: 100%;
+  }
+}
+
+.carros{
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  box-shadow: 0 8px 32px rgba(0, 51, 102, 0.12);
+  border-left: 5px solid #0066cc;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.carros:hover {
+  box-shadow: 0 12px 40px rgba(0, 51, 102, 0.2);
+  transform: translateY(-5px);
+  border-left-color: #0052a3;
+}
+
+.carros::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0066cc, #0052a3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carros:hover::before{
+  opacity: 1;
+}
+
+.carros h4{
+  color: #003d7a;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.carros p{
+  color: #555;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: justify;
+}
+.carrinhos{
+  width: 100%;
+  max-width: 450px;     
+  aspect-ratio: 3 / 2;  
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.15);
+  transition: all 0.3s ease;
+}
+
+.carrinhos:hover{
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.25);
+  transform: scale(1.03);
+}
+
+.carrinhos img{
+  width: 300px;
+  height: 500px;
+  object-fit: cover;    /* corta/ajusta para preencher sem distorcer */
+  display: block;
+  border-radius: inherit;
+}
+.logo
+{
+  height: 120px; 
+  width: 190px;
+}
+.icons ul .instagram:hover{
+  color: rgb(188, 10, 211);
+}
+
+.icons ul button:hover{
+  background: none;
+  border: 1px solid (255, 255, 255);
+}
+
+.icons ul{
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+
+.icons ul{
+  padding: 10px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:baseline;
+  gap: 30px;
+}
+
+.icons ul button{
+  font-size: 58px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: transparent;
+  color: black;
+  border: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: black;
+  transition: all 0.3s;
+}
+
+.icons ul .whatsapp:hover{
+  color: green;
+}
+
+.icons ul .gmail:hover{
+  color: red;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  background: linear-gradient(-45deg, #00c3ff, #6ec2f3, #ffffff, #00a2ff);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d32f2f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+main img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem principal estática */
+
+.imagem_principal {
+  width: 1200px;
+  height: 2000px;
+  border-radius: 10px;
+}
+.imagem_principal2
+{
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+}
+.full-width {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.full-width:hover {
+  transform: none;
+}
+
+footer {
+  background: #424242;
+  color: #ddd;
+  text-align: center;
+  padding: 50px;
+  margin-top: 90px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header img {
+    height: 50px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main img {
+    max-width: 100%;
+  }
+}
+
+.carros {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.sobre {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.icons ul .instagram:hover{
+  color: rgb(208, 6, 235);
+}
+
+.icons ul button:hover{
+  background: none;
+  border: 1px solid (255, 255, 255);
+}
+
+.icons ul{
+  display: flex;
+  justify-content:end;
+  padding: 5px;
+}
+
+.icons ul{
+  padding: 30px;
+  display: flex;
+  justify-content:center;
+  align-items:baseline;
+  gap: 50px;
+}
+
+.icons ul button{
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: transparent;
+  color: rgb(184, 179, 179);
+  border:transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: rgb(99, 99, 99);
+  transition: all 0.3s;
+}
+
+.icons ul .whatsapp:hover{
+  color: green;
+}
+
+.icons ul .gmail:hover{
+  color: red;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  background: linear-gradient(-45deg, #00c3ff, #6ec2f3, #ffffff, #00a2ff);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#btn-top{
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0291d3;
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  z-index: 9999;
+}
+#btn-top.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#btn-top:focus{ outline: 2px solid #fff; }
+#btn-top:hover{ filter: brightness(0.95); }
+#btn-top:active{ filter: brightness(0.9); }
+
+/*tela de loggin*/ 
+
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+/* Estilos para a tela de login */
+.tela_login{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  color: #222;
+}
+
+/* Cabeçalho do card */
+.tela_login h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #0f1720;
+}
+
+/* Campos de entrada */
+.tela_login input[type="text"],
+.tela_login input[type="password"],
+.tela_login input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  outline: none;
+  color: #222;
+}
+
+.tela_login input:focus,
+.tela_login input:focus-visible{
+  border-color: #0291d3;
+  box-shadow: 0 8px 20px rgba(2,145,211,0.12);
+}
+
+/* Botão de ação */
+.tela_login button{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg,#0291d3,#017bb0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease, filter .12s;
+}
+
+.tela_login button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(1,119,160,0.18);
+}
+
+.tela_login button:active{
+  transform: translateY(0);
+  filter: brightness(.97);
+}
+
+/* Links auxiliares (esqueci a senha / cadastrar) */
+.tela_login .links{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .92rem;
+  margin-top: 4px;
+}
+
+.tela_login .links a{
+  color: #0291d3;
+  text-decoration: none;
+}
+
+.tela_login .links a:hover{
+  text-decoration: underline;
+}
+
+/* Mensagens de erro / ajuda */
+.tela_login .msg{
+  font-size: .9rem;
+  color: #c62828;
+  min-height: 18px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px){
+  .tela_login{
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tela_login h1{ font-size: 1.25rem; }
+}
+
+/* Sugestão: centro vertical em telas grandes */
+@media (min-width: 900px){
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 180px); /* ajusta conforme header/footer */
+  }
+}
+ /*tela de cadastro*/
+ .box {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 3px solid #0291d3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background: #0291d3;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.inputBox {
+    position:initial;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0291d3;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 5px 0;
+   
+}
+
+.labelInput {
+    position:static;
+    top: 3px;
+    margin: 1px;
+    padding: 1px, 2px;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: 20px;
+    font-size: 18px;
+  
+    color: #0291d3;
+}
+
+#data {
+    border:#666 ;
+    border-radius: 1px;
+    outline: none;
+    font-size: 15px;
+    align-self: center;
+}
+
+#submit {
+    width: 100%;
+    padding: 15px;
+    background: #0291d3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#submit:hover {
+    background: #017bb0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2, 145, 211, 0.2);
+}
+
+/* Estilo para os radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .inputUser {
+        font-size: 14px;
+    }
+}
+
+/* Botão Adicionar ao Carrinho - Estilo Azul Moderno */
+.btn-add{
+    display: inline-block;
+    padding: 12px 32px;
+    margin: 10px 5px;
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-add:hover{
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-add:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 102, 204, 0.4);
+}
+
+.btn-add:disabled{
+    background: linear-gradient(135deg, #b3d9ff 0%, #80c0ff 100%);
+    cursor: not-allowed;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+    opacity: 0.6;
+}
+
+/* Página Carrinho */
+
+/* Container do Carrinho */
+.carrinho-armazenamento{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.15);
+    border-left: 5px solid #0066cc;
+}
+
+/* Título do Carrinho */
+.carrinho-armazenamento h2{
+    font-size: 28px;
+    color: #003d7a;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 15px;
+}
+
+/* Lista do Carrinho */
+#lista-carrinho{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#lista-carrinho li {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#lista-carrinho li:hover {
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+    transform: translateX(5px);
+    background: #f0f7ff;
+}
+
+#lista-carrinho li span {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Mensagem de Carrinho Vazio */
+.mensagem-vazio {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 30px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    border: 2px dashed #0066cc;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Total */
+#total {
+    background: linear-gradient(135deg, #003d7a 0%, #0052a3 100%);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
+    letter-spacing: 0.5px;
+}
+
+/* Ações (Botões) */
+.acoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Botão Esvaziar Carrinho */
+.btn-limpar {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #666666 0%, #333333 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-limpar:hover {
+    background: linear-gradient(135deg, #333333 0%, #000000 100%);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-limpar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão Finalizar Compra */
+.btn-finalizar {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-finalizar:hover {
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+    box-shadow: 0 6px 16px rgba(0, 102, 204, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-finalizar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+}
+
+/* ======================== ITENS DO CARRINHO ======================== */
+
+/* Estilo das imagens no carrinho */
+#lista-carrinho li img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #0066cc;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+#lista-carrinho li img:hover {
+    box-shadow: 0 6px 18px rgba(0, 102, 204, 0.4);
+    transform: scale(1.05) rotate(2deg);
+    border-color: #0052a3;
+}
+
+/* Container da esquerda (imagem + nome) */
+#lista-carrinho li > div:first-child {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Container da direita (preço + botão remover) */
+#lista-carrinho li > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Span com o nome do carro */
+#lista-carrinho li span:first-of-type {
+    font-weight: 600;
+    color: #003d7a;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Span com o preço */
+#lista-carrinho li span:last-of-type {
+    font-weight: bold;
+    color: #0066cc;
+    font-size: 18px;
+    min-width: 120px;
+    text-align: right;
+}
+
+/* Botão remover item */
+.remover-btn {
+    padding: 8px 12px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+    font-weight: bold;
+}
+
+.remover-btn:hover {
+    background: linear-gradient(135deg, #ee5a52 0%, #d63031 100%);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+    transform: scale(1.1);
+}
+
+.remover-btn:active {
+    transform: scale(0.95);
+}
+
+/* ======================== PÁGINA PAGAMENTO ======================== */
+
+/* Container de pagamento */
+.pagamento-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.15);
+    border-top: 5px solid #0066cc;
+    border-left: 5px solid #0066cc;
+}
+
+.pagamento-container h2 {
+    text-align: center;
+    color: #003d7a;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 15px;
+}
+
+/* Resumo do total */
+.resumo-total {
+    text-align: center;
+    font-size: 20px;
+    color: #0066cc;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    border: 2px solid #0066cc;
+}
+
+/* Formulário de pagamento */
+.formulario-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo de formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #003d7a;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    color: #333;
+    font-family: 'Courier New', monospace;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+    background: #f0f7ff;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Input CVV - Menor */
+.input-cvv {
+    max-width: 80px !important;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Linha com dois campos */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Botão de pagamento */
+.btn-pagar {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.btn-pagar:hover {
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+    box-shadow: 0 8px 28px rgba(0, 102, 204, 0.5);
+    transform: translateY(-3px);
+}
+
+.btn-pagar:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn-pagar:disabled {
+    background: linear-gradient(135deg, #b3d9ff 0%, #80c0ff 100%);
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .pagamento-container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-pagar {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* ======================== PÁGINA CONFIRMAÇÃO ======================== */
+
+/* Container de confirmação */
+.confirmacao-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px 20px;
+}
+
+/* Card de sucesso */
+.confirmacao-sucesso {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.15);
+    border-top: 5px solid #22c55e;
+    border-left: 5px solid #22c55e;
+    text-align: center;
+}
+
+/* Ícone de sucesso */
+.icone-sucesso {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 50px;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+    animation: scaleIn 0.6s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.confirmacao-sucesso h1 {
+    color: #22c55e;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mensagem-confirmacao {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Detalhes da confirmação */
+.detalhes-confirmacao {
+    background: #f0f7ff;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.detalhes-confirmacao p {
+    color: #333;
+    font-size: 16px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalhes-confirmacao strong {
+    color: #003d7a;
+}
+
+.detalhes-confirmacao span {
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Próximos passos */
+.proximos-passos {
+    background: #fff5f5;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.proximos-passos h3 {
+    color: #d97706;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.proximos-passos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.proximos-passos li {
+    color: #666;
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffe4b5;
+}
+
+.proximos-passos li:last-child {
+    border-bottom: none;
+}
+
+/* Ações de confirmação */
+.acoes-confirmacao {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.btn-voltar,
+.btn-comprar-mais {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    background: linear-gradient(135deg, #666666 0%, #333333 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-voltar:hover {
+    background: linear-gradient(135deg, #333333 0%, #000000 100%);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-voltar:active {
+    transform: translateY(0);
+}
+
+/* Botão Comprar Mais */
+.btn-comprar-mais {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.btn-comprar-mais:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    box-shadow: 0 6px 16px rgba(34, 197, 94, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-comprar-mais:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .confirmacao-sucesso {
+        padding: 30px 20px;
+    }
+
+    .confirmacao-sucesso h1 {
+        font-size: 24px;
+    }
+
+    .acoes-confirmacao {
+        flex-direction: column;
+    }
+
+    .btn-voltar,
+    .btn-comprar-mais {
+        width: 100%;
+    }
+}
+
+/* Botão de Finalizar a Compra */
+
+
